@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"another_again\startup_stm32f407xx.o"
+"another_again\main.o"
+"another_again\stm32f4xx_it.o"
+"another_again\stm32f4xx_hal_msp.o"
+"another_again\stm32f4xx_hal_i2c.o"
+"another_again\stm32f4xx_hal_i2c_ex.o"
+"another_again\stm32f4xx_hal_tim.o"
+"another_again\stm32f4xx_hal_tim_ex.o"
+"another_again\stm32f4xx_hal_uart.o"
+"another_again\stm32f4xx_hal_rcc.o"
+"another_again\stm32f4xx_hal_rcc_ex.o"
+"another_again\stm32f4xx_hal_flash.o"
+"another_again\stm32f4xx_hal_flash_ex.o"
+"another_again\stm32f4xx_hal_flash_ramfunc.o"
+"another_again\stm32f4xx_hal_gpio.o"
+"another_again\stm32f4xx_hal_dma_ex.o"
+"another_again\stm32f4xx_hal_dma.o"
+"another_again\stm32f4xx_hal_pwr.o"
+"another_again\stm32f4xx_hal_pwr_ex.o"
+"another_again\stm32f4xx_hal_cortex.o"
+"another_again\stm32f4xx_hal.o"
+"another_again\stm32f4xx_hal_exti.o"
+"another_again\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "another_again\another_again.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "another_again.map" -o another_again\another_again.axf
